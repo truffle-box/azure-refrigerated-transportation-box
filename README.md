@@ -12,7 +12,7 @@ temperature range the measurement must fall in to be compliant. At any point, if
 the device takes a temperature or humidity measurement that is out of range, the
 contract state will be updated to indicate that it is out of compliance.  
 
-![visualization of supply chain](media/59c0d3080fb4ad63b1e64c8496645d3b.png)
+![visualization of supply chain](https://raw.githubusercontent.com/caleteeter/refrigerated-transportation/master/media/59c0d3080fb4ad63b1e64c8496645d3b.png)
 
 All participants can view the state and details of the contract at any point in
 time. The counterparty doing the transportation will specify the next
@@ -21,6 +21,8 @@ data, which gets written to the chain. This allows the Supply Chain Owner and
 Supply Chain Observer to pinpoint which counterparty did not fulfill the
 compliance regulations if at any point in the process either the temperature or
 humidity requirements were not met.   
+
+<br />
 
 Application Roles 
 ------------------
@@ -32,6 +34,8 @@ Application Roles 
 | Owner                  | The organization that owns the product being transported. For example, a manufacturer |
 | Observer               | The individual or organization monitoring the supply chain. For example, a government agency |
 
+<br />
+
 States 
 -------
 
@@ -42,10 +46,12 @@ States 
 |Completed |Indicates the product has reached it's intended destination.| 
 |OutOfCompliance|Indicates that the agreed upon terms for temperature and humidity conditions were not met.|
 
+<br />
+
 Workflow Details
 ----------------
 
-![state diagram for the workflow](media/73ebae42a69347a7edb762d0f583724a.png)
+![state diagram for the workflow](https://raw.githubusercontent.com/caleteeter/refrigerated-transportation/master/media/73ebae42a69347a7edb762d0f583724a.png)
 
 The following state transition diagram articulates the possible flows, and the
 various transition functions at each state. Each user is only allowed to take
@@ -63,8 +69,10 @@ ingests readings, which are in compliance throughout the transportation process,
 while the involved counterparties transfer responsibility until the
 transportation is completed.  
 
+<br />
+
 Application Files
 -----------------
-[RefrigeratedTransportation.json](./ethereum/RefrigeratedTransportation.json)
+[RefrigeratedTransportation.json](https://raw.githubusercontent.com/caleteeter/refrigerated-transportation/master/RefrigeratedTransportation.json)
 
-[RefrigeratedTransportation.sol](./ethereum/RefrigeratedTransportation.sol)
+[RefrigeratedTransportation.sol](https://raw.githubusercontent.com/caleteeter/refrigerated-transportation/master/contracts/RefrigeratedTransportation.sol)
